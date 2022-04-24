@@ -14,6 +14,5 @@ const images = [
 ];
 
 
-let elements = [];
-for (let el of images) { elements.push(`<li><img src="${el.url}" alt="${el.alt}"></li>`) };
+let elements = images.map(image => { return (`<li><img src="${image.url}" alt="${image.alt}"></li>`) });
 document.querySelector('ul.gallery').insertAdjacentHTML('beforeEnd', elements.join(''));

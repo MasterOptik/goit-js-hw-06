@@ -12,7 +12,7 @@ const spanEl = document.querySelector('#name-output',)
 function onInputChange(event) {
     console.log(event.currentTarget.value);
     spanEl.textContent = event.currentTarget.value;
-    if (event.currentTarget.value == "") {
+    if (event.currentTarget.value === "") {
         spanEl.textContent = 'Anonymous';
     }
 

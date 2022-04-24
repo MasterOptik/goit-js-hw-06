@@ -11,7 +11,9 @@ function handleSubmit(event) {
     if (email.value === "" || password.value === "") {
         alert("Заповніть всі поля будь ласка");
     }
-
-    console.log(`Login: ${email.value}, Password: ${password.value}`);
+    const object = new Object();
+    object.email = email.value;
+    object.password = password.value;
+    console.log(object);
     event.currentTarget.reset();
 }
