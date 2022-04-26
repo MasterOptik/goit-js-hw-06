@@ -13,7 +13,7 @@
 const input = document.querySelector('#validation-input');
 
 input.addEventListener('blur', function () {
-    if (input.value.length === input.dataset.length) {
+    if (input.value.length === +input.dataset.length) {
         input.classList.add('valid');
         input.classList.remove('invalid');
     } else {
